@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+	    #div0 div {
+	        width: 100px; 
+            height: 50px;
+	        background: red;
+	        color: yellow;
+	        border: 1px solid black;
+	        /* transition: width 3s; */
+	    }
+        #div1 { 
+            transition:3s linear; 
+        }
+	    #div2 { 
+            transition:3s ease;
+	    }
+	    #div3 { 
+            transition:3s ease-in; 
+	    }
+	    #div4 { 
+            transition:3s ease-out; 
+	    }
+	    #div5 { 
+            transition:3s ease-in-out; 
+	    }
+	    #div6 { 
+            transition:3s cubic-bezier(0.1, 0.0, 0.1, 1.0); 
+	    }
+        #div0:hover div{
+	        width: 400px;
+	    }
+    </style>
+</head>
+<body>
+	<div id="div0">
+		<div id="div1" style="top: 100px">linear</div>
+		<div id="div2" style="top: 150px">ease</div>
+		<div id="div3" style="top: 200px">ease-in</div>
+		<div id="div4" style="top: 250px">ease-out</div>
+		<div id="div5" style="top: 300px">ease-in-out</div>
+		<div id="div5" style="top: 350px">cubic-bezier</div>
+	</div>
+</body>
+</html>
